@@ -18,12 +18,20 @@ All of these notebooks are also hosted on
 preview service offered by Microsoft which allows you to run all of the
 notebooks contents on a remotely provisioned Azure server).
 
-This setup is recommended for most users -- you won't need to create a new
-environment to run these commands, nor install any software locally. Thanks,
-Microsoft!
+This setup is recommended for most users -- you won't need to install anything
+to load these notebooks or to run these commands (though that *will* take a
+little more than just opening the files). Thanks,Microsoft!
+
+As I said above, to read these notes, just open the link above and click on the
+lecture notes. To *run* one of these notebooks, you *will* need to create a
+Microsoft Azure account (we will likely create one of these later anyway, so now
+is a fine time). once you have created an account and signed in, you should be
+able to clone any one of these items using the "Clone" button (right above the
+"Search" bar). this will create a copy in your own personal Microsoft Azure
+library and will build a server and environment for you any time you launch it.
 
 
-## running locally
+### running locally
 
 if you would like to run these locally, you need to make sure your environment
 meets the requirements listed in `environment.yml`. if you are using the `conda`
