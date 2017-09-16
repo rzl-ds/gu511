@@ -8,6 +8,12 @@ course. like any `jupyter` notebook, they exist in two states:
 2. executable: load any of these `.ipynb` files into an active `jupyter`
    notebook server session
 
+you should consider the [Microsoft Azure Notebooks
+Server](https://notebooks.azure.com/rzachlamberty/libraries/gu511-hw) to be the
+default location of these files. If you are having problems with that site, the
+backup location (where notebooks are rendered but not clonable nor executable)
+is the [github repo](https://github.com/rzl-ds/gu511_hw).
+
 
 ## advanced usage: running these notebooks
 
