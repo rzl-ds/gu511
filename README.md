@@ -1,64 +1,56 @@
 # Georgetown University Math & Statistics 511
 
-the `jupyter` notebooks in this repository form the lecture notes for the GU511
-course. like any `jupyter` notebook, they exist in two states:
+the `jupyter` notebooks in this repository form the lecture notes for the GU
+MAST 511 course. like any `jupyter` notebook, they exist in two states:
 
 1. rendered: click on any of the `.ipynb` files in the repo above and you will
    be taken to a `github`-rendered version of the notebook for your own use
 2. executable: load any of these `.ipynb` files into an active `jupyter`
    notebook server session
 
-you should consider the [Microsoft Azure Notebooks
-Server](https://notebooks.azure.com/rzachlamberty/libraries/gu511-hw) to be the
-default location of these files. If you are having problems with that site, the
-backup location (where notebooks are rendered but not clonable nor executable)
-is the [github repo](https://github.com/rzl-ds/gu511_hw).
 
+## running these notebooks
 
-## advanced usage: running these notebooks
+in addition to simply reading these notebooks as presented here on github, you
+may want to execute the contents in a real `python` session. if that is the
+case, there are a number of options -- I will outline here two that I think are
+pretty convenient
+
 
 ### Microsoft Azure Notebooks
 
-All of these notebooks are also hosted on
-[Microsoft Azure Notebooks](https://notebooks.azure.com/rzachlamberty/libraries/gu511) (a
-preview service offered by Microsoft which allows you to run all of the
-notebooks contents on a remotely provisioned Azure server).
+you may clone any repository using
+[Microsoft Azure Notebooks](https://notebooks.azure.com) (this is a preview
+service offered by Microsoft which allows you to run all of the notebooks
+contents on a remotely provisioned Azure server). in particular, you may create
+a library by cloning from `github`.
 
-This setup is recommended for most users -- you won't need to install anything
-to load these notebooks or to run these commands (though that *will* take a
-little more than just opening the files). Thanks,Microsoft!
+the advantage of going with ms azure notebooks is that it won't involve any
+changes to your local machine -- no download of the lecture files, no `python`
+environment setup. for many, this may be preferable.
 
-As I said above, to read these notes, just open the link above and click on the
-lecture notes. To *run* one of these notebooks, you *will* need to create a
-Microsoft Azure account (we will likely create one of these later anyway, so now
-is a fine time). once you have created an account and signed in, you should be
-able to clone any one of these items using the "Clone" button (right above the
-"Search" bar). this will create a copy in your own personal Microsoft Azure
-library and will build a server and environment for you any time you launch it.
+in order to do this:
+
+1. create an account
+1. add a "library" (ms azure notebook's name for a collection of notebooks)
+1. on the "create new library" popup, switch from the "New" tab to the "From
+    GitHub" tab
+1. fill in the details as seen in the picture below
+1. highlight the lecture you wish to run and click the "play" button
+
+<div align="center"><img src="http://drive.google.com/uc?export=view&id=12MVRpuzK2p6X4THSxmRADd3nnxa_QoIM"></img></div>
+
+**warning** the RISE slideshow integration is buggy. try it out, but be ready to
+force-quit your browser.
 
 
 ### running locally
 
-if you would like to run these locally, you need to make sure your environment
-meets the requirements listed in `environment.yml`. if you are using the `conda`
-package manager, you can make sure this is the case by creating an environment
-based on that `environment.yml` file.
-
-To create a new environment from scratch, within the directory of this
-repository run
-
-```bash
-conda env create -f environment.yml [--name YOUR_NAME]
-```
-
-this will create an environment (named `gu511` by default, or `YOUR_NAME` if you
-pass your own via the `--name` command line flag) and install the needed
-dependencies into that environment.
-
-with some regularity you should also update that created environment to pick up
-any new dependencies or version updates. if the environment already exists, you
-can simply run
-
-```bash
-conda env update -f environment.yml [--name YOUR_NAME]
-```
+if you would like to run these locally, you simply need to download the files
+and make sure youre local `python` environment meets the pre-requisites. the
+primary requirement is that you be running `python` version 3.4+, and that you
+have the `jupyter` package installed. in addition to that you will likely need
+to install different packages in order to execute different notebooks, and I
+suggest you use an environment manager for that (specifically, `conda` or
+`pip` and `virutalenv`). for more details on exactly how to do that, refer to
+the `python` lecture in this repository.
