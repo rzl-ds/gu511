@@ -47,7 +47,7 @@ force-quit your browser.
 ### running locally
 
 if you would like to run these locally, you simply need to download the files
-and make sure youre local `python` environment meets the pre-requisites. the
+and make sure your local `python` environment meets the pre-requisites. the
 primary requirement is that you be running `python` version 3.4+, and that you
 have the `jupyter` package installed. in addition to that you will likely need
 to install different packages in order to execute different notebooks, and I
