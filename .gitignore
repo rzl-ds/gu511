@@ -5,3 +5,4 @@ hw
 img
 courseutils
 __pycache__
+.DS_Store
